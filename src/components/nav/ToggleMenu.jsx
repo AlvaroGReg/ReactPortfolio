@@ -4,7 +4,7 @@ import { BsFilterLeft } from 'react-icons/bs'
 export const ToggleMenu = () => {
   return (
     <>
-        <BsFilterLeft/>
+        <BsFilterLeft className='toggleMenuIcon'/>
     </>
   )
 }

@@ -160,12 +160,7 @@ main {
   height: 100vh;
   overflow: hidden;
   position: relative;
-}
-
-.wrapper {
-  height: 100%;
-  width: 100%;
-  transition: all 1.4s ease;
+  margin-top: 55px;
 }
 
 section {
@@ -179,13 +174,9 @@ section {
 }
 
 .sectiontitle {
-  margin-bottom: 5vh;
   font-size: 2em;
-  font-weight: 600;
-  overflow: hidden;
+  font-weight: 400;
   white-space: nowrap;
-  opacity: 0;
-  transition: opacity 0.1s;
 }
 
 /*HEADER*/
@@ -222,7 +213,7 @@ nav>ul>li:hover{
   color: var(--color-accent);
 }
 
-.themeIcon {
+.themeIcon{
   fill: var(--font-color);
   height: 2.5em;
   width: 2.5em;
@@ -231,6 +222,18 @@ nav>ul>li:hover{
 
 .themeIcon:hover,
 .themeIcon:active {
+  fill: var(--color-accent);
+  transition: 500ms;
+}
+
+.toggleMenuIcon{
+  fill: var(--font-color);
+  height: 2.5em;
+  width: 2.5em;
+  cursor: pointer;
+}
+
+.toggleMenuIcon:hover {
   fill: var(--color-accent);
   transition: 500ms;
 }
@@ -505,7 +508,7 @@ footer {
 }
 
 footer>img {
-  width: 50px;
+  width: 60px;
 }
 
 @media (max-width: 720px) {
@@ -557,10 +560,7 @@ footer>img {
   header>nav>.navM>ul>a>li>p {
       font-size: 3em;
   }
-  
-  .sectiontitle{
-      margin: 10px;
-  }
+
 
   .home{
       flex-direction: column;
@@ -576,10 +576,6 @@ footer>img {
       align-items: center;
   }
   .home>.hometxtdiv>.homedata>div{
-      width: fit-content;
-  }
-  .home>.hometxtdiv>.homedata>div>.sectiontitle{
-      text-align: center;
       width: fit-content;
   }
 
